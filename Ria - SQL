@@ -1,0 +1,20 @@
+#SELECT * FROM `bigquery-public-data.fda_drug.drug_enforcement` LIMIT 1000
+#RESULT - EXTRACTED DATA FROM THE TABLE DRUG ENFORCEMENT
+#SELECT recall_number,city,event_id FROM `bigquery-public-data.fda_drug.drug_enforcement`LIMIT 1000
+# RESULT - DISPLAYED NUMBER,CITY,EVENT ID 
+#SELECT * FROM `bigquery-public-data.fda_drug.drug_enforcement`ORDER BY recall_number,event_id DESC LIMIT 1000
+#RESULT - STARTING FROM 828102 AND ENDING AT 72181
+#SELECT * FROM `bigquery-public-data.fda_drug.drug_enforcement`WHERE city="Toronto" LIMIT 1000
+#RESULT - ALL CITIES WITH TORONTO WERE PRINTED, 100
+#SELECT COUNT(DISTINCT(city)) FROM `bigquery-public-data.fda_drug.drug_enforcement` LIMIT 1000
+#RESULT - 572
+#SELECT city,AVG(event_id) FROM `bigquery-public-data.fda_drug.drug_enforcement` group by city LIMIT 1000
+#RESULT - 1st city Basel '63656.0', Last city Hood River '62237.0'
+#SELECT city,max(event_id) FROM `bigquery-public-data.fda_drug.drug_enforcement` GROUP BY city LIMIT 1000
+#RESULT - Basel'63656', Hood River'62237'
+#SELECT MIN(event_id) FROM `bigquery-public-data.fda_drug.drug_enforcement` LIMIT 1000
+#RESULT - 35255
+#SELECT distribution_pattern FROM `bigquery-public-data.fda_drug.drug_enforcement`LIMIT 1000
+#RESULT - ROW OF DISTRIBUTION PATTERN GOT PRINTED
+#SELECT * FROM `bigquery-public-data.fda_drug.drug_enforcement`WHERE distribution_pattern="Nationwide" LIMIT 1000
+#RESULT - ALL 100 OF THE HAD NATIONWIDE DISTRIBUTION
